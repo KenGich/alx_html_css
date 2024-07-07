@@ -1,0 +1,49 @@
+/* body acts as a flex container in column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*body takes full viewport height */
+    margin: 0;
+}
+
+/*main acts as a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /*main to take up available space */
+}
+
+/*header */
+header {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+/*article space */
+article {
+    flex: 2;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/*aside space */
+aside {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/*some basic styles for the page */
+body, main, header, footer, article, aside {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
